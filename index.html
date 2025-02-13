@@ -3,13 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 16px;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .username {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .follow-btn {
+            margin-top: 16px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .follow-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>HELOOOOOOOOO</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, perferendis.</p>
-    <img src="" alt="">
-    <h1>sd</h1>
+    <div class="card">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-img">
+        <div class="name">John Doe</div>
+        <div class="username">@johndoe</div>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Followers</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">143</div>
+                <div class="stat-label">Following</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">57</div>
+                <div class="stat-label">Posts</div>
+            </div>
+        </div>
+        <button class="follow-btn">Send Messege</button>
+        <br>
+        <button class="follow-btn">MORE</button>
+    </div>
 </body>
 </html>
